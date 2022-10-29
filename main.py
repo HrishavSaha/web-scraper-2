@@ -13,7 +13,7 @@ bspage = bs(page.text, "html.parser")
 table = bspage.find_all('table', attrs={"class":"wikitable sortable"})[2]
 
 #Preparing headers and neccessary lists
-headers = ['name', 'constellation', 'right_ascension', 'declination', 'apparent_magnitude', 'distance', 'spectral_type', 'mass', 'radius']
+headers = ['name', 'constellation', 'right_ascension', 'declination', 'apparent_magnitude', 'distance', 'spectral_type', 'mass', 'radius', 'discovery_date']
 celestial_data = []
 
 #Looping through all data and storing it
